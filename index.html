@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Gurjar | Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --accent-2: #7c3aed;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, var(--bg), #1e293b);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .page {
+            width: min(100%, 900px);
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, var(--accent), var(--accent-2));
+            color: white;
+            padding: 36px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            color: var(--accent);
+            display: grid;
+            place-items: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 32px 36px 36px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        .video-container {
+            margin-top: 10px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero,
+            .content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <section class="hero">
+            <div class="avatar">MG</div>
+            <div>
+                <h1>MAYUR GURJAR</h1>
+                <p>Student • Learning Web Development • Building creative projects</p>
+            </div>
+        </section>
+
+        <div class="content">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Hello everyone! My name is Mayur Gurjar, and I am a first-year B.Tech student. I have recently started learning web development and I am enjoying the journey of creating simple and meaningful websites.</p>
+                <p>I have learned C++ and I am continuing to grow my skills in HTML, CSS, and JavaScript. I come from a small family of four members.</p>
+            </section>
+
+            <section class="card">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">C++</span>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Featured Video</h2>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/HcOc7P5BMi4"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Project Link</h2>
+                <a class="link" href="newfolder/asd.py">Open the Python file</a>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
